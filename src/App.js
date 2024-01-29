@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Testimonio from './componentes/Testimonio.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='contenedor-principal'>
+        <h1>Esto es lo que dicen los expertos</h1>
+
+        <Testimonio 
+        nombre='Irene Comesaña' 
+        pais='España'
+        imagen='imagen1'
+        cargo='Profesora'
+        empresa='Romero Vargas'
+        testimonio='"Feliz por todo lo que obtienes de esta pagina web, muy útil y sencilla para aprender. La recomiendo competamente a mis alumnos que quieran estuidar programación"'
+        
+        />
+        <Testimonio 
+        nombre='Monkey D. Chadfy' 
+        pais='Goa'
+        imagen='imagen2'
+        cargo='Marine'
+        empresa='World Namibia Government'
+        testimonio='"Tenemos que ser duros, si solo uno de esos eruditos hubiera subido al barco, todos los sacrificios que hemos hecho no servirían para nada... Tenemos que eliminar la última posibilidad de la existencia de este "mal"."'
+        
+        />
+        
+      </div>
     </div>
   );
 }
