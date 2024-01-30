@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className='contenedor-principal'>
-        <h1>Esto es lo que dicen los expertos</h1>
+        <h1>Esto es lo que dicen nuestros expertos sobre FreeCodeCamp</h1>
 
         <Testimonio 
         nombre='Irene Comesaña' 
